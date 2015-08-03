@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Hanabishi</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        
+        <section id="main-header">
+          <a href="#"><h1 class="hn-logo"><span>Hanabishi</span></h1></a>
+          <span id="user-identifier"><a href="#">Log Out</a></span>
+        </section> <!-- /#main-header -->
+        
+        <section id="content-wrapper">
+        
+          <section id="sidebar">
+            <nav>
+              <ul>
+                <li><a href="#">Company</a></li>
+                <li><a href="#">Brand</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Employee</a></li>
+                <li><a href="#">Retailer</a></li>
+                <li><a href="#">Outlet</a></li>
+                <li><a href="#">SKU</a></li>
+                <li><a href="#">Delivery</a></li>
+                <li><a href="#">Transaction</a></li>
+                <li><a href="#">Inventory</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Outlet Inventors</a></li>
+                <li><a href="#">Activity Logs</a></li>
+              </ul>
+            </nav>
+          </section> <!-- /#sidebar -->
+          
+          <section id="live-floor">
+            
+            <section id="form-controls">
+            <h2 class="section-header">Deliveries</h2>
+              <form>
+                <input type="text" id="search" placeholder="Hello World!" />
+                <select>
+                  <option disabled>Select Option</option>
+                  <option>Option 1</option>
+                  <option>Option 2</option>
+                  <option>Option 3</option>
+                </select>
+                <button type="submit">Search</button>
+                <a class="button" id="fire-add-delivery" href="#">Add New</a>
+              </form>
+            </section> <!-- /#form-controls -->
+            
+            <section id="data-display">
+              <table>
+                <thead>
+                  <tr>
+                    <td>Data 1</td>
+                    <td>Data 2</td>
+                    <td>Data 3</td>
+                    <td>Data 4</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                    <td>d</td>
+                  </tr>
+                  <tr>
+                    <td>a</td>
+                    <td>b</td>
+                    <td>c</td>
+                    <td>d</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section> <!-- /#data-display -->
+            
+          </section> <!-- /#live-floor -->
+        
+        </section> <!-- /#content-wrapper -->
+        
+        <section id="main-footer">
+          <span>&copy; Hanabishi / Krolem, Inc.</span>
+        </section> <!-- /#main-footer -->
+        
+        <!--MODALS-->
+  
+        <div id="add-delivery" class="modal">  
+          <h2 class="section-header">Add Delivery</h2>
+          <a class="close-modal" href="#" title="Close">&#215;</a>
+          <form>
+            <span><input type="text" placeholder="Delivery ID" id="delivery-id"></span>
+            <span><input type="text" placeholder="Outlet" id="delivery-outlet"></span>
+            <span>
+              <select id="delivery-employee">
+                <option disabled selected>Employee Name</option>
+                <option>Tan</option>
+                <option>Ng</option>
+                <option>Ong</option>
+                <option>Sy</option>
+              </select>
+            </span>
+            <span>
+              <select id="delivery-product">
+                <option disabled selected>Choose Product</option>
+                <option>Tan</option>
+                <option>Ng</option>
+                <option>Ong</option>
+                <option>Sy</option>
+              </select>
+            </span>
+            <span>
+              <select id="delivery-color">
+                <option disabled selected>Choose Color</option>
+                <option>Red</option>
+                <option>Orange</option>
+                <option>Yellow</option>
+                <option>Green</option>
+              </select>
+              <input type="text" id="delivery-quantity" placeholder="Quanitity">
+           </span>
+          </form>
+          <div class="add-new">
+            <a type="submit" class="button" id="add-category-confirm">Confirm</a>
+          </div>
+        </div> <!--/#add-customer-->
+
+        
+        <!--/MAIN CONTENT-->
+        <script src="js/jquery.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/jquery.bpopup.min.js"></script>
+
+    </body>
+</html>
